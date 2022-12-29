@@ -1,0 +1,32 @@
+[
+    {
+        "link": "https://vanrogh.github.io/vanrogh.github.io-calc/",
+        "header": "Калькулятор",
+        "image": "img/12.png",
+        "text": "Калькулятор с использованием html, css и JavaScript. Задание со второй рубежки."
+    },
+    {
+        "link": "https://vanrogh.github.io/vanrogh.github.io-verstka/",
+        "header": "Верстка Макета",
+        "image": "img/13.png",
+        "text": "Адаптивная верстка выбранного макета. Проект для РК 1."
+    },
+    {
+        "link": "https://vanrogh.github.io/vanrogh.github.io-movies/",
+        "header": "Movies",
+        "image": "img/14.png",
+        "text": "Список фильмов. Задание с первой рубежки."
+    },
+    {
+        "link": "https://vanrogh.github.io/",
+        "header": "Вход/Регистрация с помощью JS. Работа с JSON",
+        "image": "img/15.png",
+        "text": "Вход/Регистрация на сайте с помощью JS. Работа с Fetch JSON. Проект РК2."
+    },
+    {
+        "link": "https://vanrogh.github.io/vanrogh.github.io-gsearch/",
+        "header": "Поисковик Google с расширенным поиском",
+        "image": "img/16.png",
+        "text": "Верстка посиковика Google. Поиск по картинкам, продвинутый поиск с использованием ключевых слова."
+    }
+]

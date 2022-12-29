@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+/* НАВИГАЦИОННАЯ ПАНЕЛЬ МЕНЮ */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: #EEEFF1;
+    width: 100%;
+}
+
+.navbar h1 {
+    color: #34547A;
+    cursor: pointer;
+    font-family: 'Revalia', sans-serif;
+    font-size: 32px;
+}
+
+.navbar .nav-links .active a {
+    color: #34547A;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 611px;
+}
+
+.nav-links li a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+    color: #34547A;
+}
+
+/* FIRST SCREEN */
+.first-screen {
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #34547A, #02CFDF);
+}
+
+.first-screen img{
+    width: 250px;
+    height: 180px;
+}
+
+.first-screen p {
+    color: #EEEFF1;
+    font-size: 16px;
+    width: 540px;
+    line-height: 26px;
+}
+.first-screen h2 {color: #fff;}
+.first-screen .button {
+    color: #fff;
+    background-color: #34547A;
+    padding: 15px;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.first-screen .button:hover {
+    background-color: #00D5E4;
+    transition: .5s;
+}
+
+.first-screen .text {
+    margin-left: 100px;
+}
+
+.first-screen .text h2 {
+    padding-bottom: 40px;
+    font-size: 48px;
+}
+
+.first-screen .text p {
+    padding-bottom: 70px;
+}
+
+/* ОБО МНЕ */
+.about-me {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    background-color: #EEEFF1;
+}
+
+.about-me h2 {
+    font-size: 32px;
+    padding: 40px 0;
+}
+
+.about-me p {
+    font-size: 16px;
+    line-height: 26px;
+    width: 540px;
+    height: 67px;
+    margin-bottom: 50px;
+    color: #727272;
+}
+
+/* МОИ РАБОТЫ */
+section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 3rem 18rem;
+  }
+
+  .main-title {
+    text-align: center;
+  }
+
+  .main-title h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+  }
+  .blogs .blog {
+    position: relative;
+    background-color: #EEEFF1;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+  }
+  .blogs .blog:hover {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    transition: all 0.4s ease-in-out;
+  }
+  .blogs .blog:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+  }
+  .blogs .blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    filter: grayscale(100%);
+    transition: all 0.4s ease-in-out;
+  }
+  .blogs .blog .blog-text {
+    margin-top: -7px;
+    padding: 1.1rem;
+    border-top: 10px solid #27AE60;
+  }
+  .blogs .blog .blog-text h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+  .blogs .blog .blog-text h4:hover {
+    color: #27AE60;
+  }
+  .blogs .blog .blog-text p {
+    color: #727272;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  /* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #34547A;
+    height: 120px;
+    color: #fff;
+}
+
+.footer .text h3 {
+    font-size: 21px;
+}
+
+.footer .text p {
+    font-size: 13px;
+}
+
+.footer .socials a {
+    font-size: 32px;
+    padding: 0 10px;
+}
+
+
+/* RESPONSIVE WEB */
+  @media screen and (max-width: 1250px) {
+    .blogs {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 6rem;
+    }
+  }
+
+  @media screen and (max-width: 660px) {
+    .blogs {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar h1 {
+        padding-bottom: 10px;
+        font-size: 28px;
+    }
+    .navbar .nav-links li a {
+        font-size: 14px;
+    }
+    .navbar .nav-links {
+        width: 480px;
+    }
+
+    /* First screen */
+    .first-screen img {
+        width: 180px;
+        height: 110px;
+    }
+    .first-screen .text h2 {
+        font-size: 32px;
+        padding-bottom: 20px;
+    }
+    .first-screen .text p {
+        width: 360px;
+        padding-bottom: 50px;
+    }
+    .first-screen .button {
+        padding: 14px;
+        font-size: 12px;
+    }
+    .first-screen .text {
+        margin-left: 60px;
+    }
+    section {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 10rem;
+      }
+  }
+
+  @media screen and (max-width: 480px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar h1 {
+        padding-bottom: 8px;
+        font-size: 24px;
+    }
+    .navbar .nav-links li a {
+        font-size: 12px;
+    }
+    .navbar .nav-links {
+        width: 340px;
+    }
+
+    /* First screen */
+    .first-screen {
+        height: 480px;
+    }
+    .first-screen img {
+        width: 150px;
+        height: 80px;
+        padding-left: 10px;
+    }
+    .first-screen .text h2 {
+        font-size: 20px;
+        padding-bottom: 14px;
+    }
+    .first-screen .text p {
+        width: 200px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+        font-size: 14px;
+        line-height: 1.75;
+    }
+    .first-screen .button {
+        padding: 10px;
+        font-size: 10px;
+    }
+    .first-screen .text {
+        margin-left: 40px;
+    }
+    .about-me {
+        height: 200px;
+    }
+    .about-me h2 {
+        font-size: 22px;
+        padding: 15px 0;
+    }
+    .about-me p {
+        font-size: 12px;
+        line-height: 26px;
+        width: 320px;
+        height: 67px;
+        margin-bottom: 60px;
+    }
+    /* FOOTER */
+    .footer {
+        height: 90px;
+    }
+    .footer .text h3 {
+        font-size: 18px;
+    }
+    .footer .text p {
+        font-size: 11px;
+    }
+    .footer .socials a {
+        font-size: 24px;
+        padding: 0 6px;
+    }
+  }
